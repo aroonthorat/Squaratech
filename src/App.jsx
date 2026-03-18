@@ -202,6 +202,44 @@ function App() {
         </div>
       </section>
 
+      {/* Magel Tyala Solar Project Banner */}
+      <section className="gov-scheme-section" id="government-scheme">
+        <div className="container reveal">
+          <div className="scheme-banner glass-panel relative overflow-hidden">
+            <div className="scheme-glow bg-glow green"></div>
+            <div className="scheme-content text-center">
+              <div className="badge">Authorized Partner</div>
+              <h2><span className="gradient-text-green">Magel Tyala</span> Saur Krushi Pump Yojana</h2>
+              <p className="scheme-desc">
+                We are proud implementation partners of the Maharashtra Government's flagship initiative providing 
+                reliable, daytime solar power to farmers off the grid. As an <strong>Authorized Vendor for Havells and Shakti Pumps</strong>, we install top-tier, certified hardware.
+              </p>
+              
+              <div className="energy-stats scheme-stats">
+                 <div className="stat-item">
+                    <span className="stat-value">Up to 95%</span>
+                    <span className="stat-label">Subsidy Available</span>
+                 </div>
+                 <div className="stat-line"></div>
+                 <div className="stat-item">
+                    <span className="stat-value">5 Years</span>
+                    <span className="stat-label">Free Maintenance</span>
+                 </div>
+                 <div className="stat-line"></div>
+                 <div className="stat-item">
+                    <span className="stat-value">Zero</span>
+                    <span className="stat-label">Electricity Bills</span>
+                 </div>
+              </div>
+              
+              <div className="mt-2">
+                <a href="#contact" className="btn btn-primary">Apply For Solar Pump <ArrowRight className="btn-icon" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 5. Why Choose Us */}
       <section className="stats-section bg-dark">
         <div className="container grid-2 align-center reveal">
