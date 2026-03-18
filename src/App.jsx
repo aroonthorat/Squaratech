@@ -3,6 +3,7 @@ import {
   Menu, X, Sun, Battery, Activity, Zap, Shield, Cpu, 
   ChevronRight, Play, Star, ArrowRight, ArrowUpRight 
 } from 'lucide-react';
+import LightningBackground from './LightningBackground';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <LightningBackground />
       {/* Background Energy Lines animation in App.css */}
       <div className="energy-bg">
         <div className="energy-line line-1"></div>
