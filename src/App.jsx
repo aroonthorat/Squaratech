@@ -247,8 +247,8 @@ function App() {
           <div className="portfolio-showcase glass-panel">
              <div className="portfolio-image">
                <div className="portfolio-overlay">
-                 <h3>Alpha Smart Grid, California</h3>
-                 <p>10MW installation powering a 500-home eco-village.</p>
+                 <h3>Surya Smart Grid, Maharashtra</h3>
+                 <p>25MW installation powering a 500-home eco-village.</p>
                </div>
              </div>
           </div>
