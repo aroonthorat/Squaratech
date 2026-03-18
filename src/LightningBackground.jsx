@@ -10,6 +10,7 @@ const LightningBackground = () => {
     
     let w, h;
     let sparks = [];
+    let trail = [];
     const maxSparks = 60;
     
     // Mouse state
@@ -33,6 +34,8 @@ const LightningBackground = () => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
       mouse.moved = true;
+      
+      trail.push({ x: mouse.x, y: mouse.y, life: 1 });
       
       // Burst sparks on mouse movement
       if (Math.random() > 0.3) {
@@ -78,6 +81,36 @@ const LightningBackground = () => {
     const animate = () => {
       ctx.clearRect(0, 0, w, h);
       
+      // Draw smooth, lingering aftereffect trail
+      if (trail.length > 0) {
+        ctx.beginPath();
+        for (let i = 0; i < trail.length; i++) {
+          let p = trail[i];
+          if (i === 0) ctx.moveTo(p.x, p.y);
+          else ctx.lineTo(p.x, p.y);
+          p.life -= 0.02; // Slow fade out
+        }
+        ctx.strokeStyle = 'rgba(0, 229, 255, 0.4)'; // Cyber blue trail
+        ctx.lineWidth = 3;
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = '#00e5ff';
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+      }
+      
+      // Draw glowing orbs from the trail
+      for (let i = 0; i < trail.length; i++) {
+        let p = trail[i];
+        if (p.life > 0 && Math.random() > 0.6) {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.life * 3, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(0, 255, 136, ${p.life * 0.6})`;
+          ctx.fill();
+        }
+      }
+      
+      trail = trail.filter(p => p.life > 0);
+
       for (let i = 0; i < sparks.length; i++) {
         let p = sparks[i];
         p.x += p.vx;
