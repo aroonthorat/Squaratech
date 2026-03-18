@@ -40,8 +40,7 @@ function App() {
       <nav className={`navbar ${isScrolled ? 'scrolled glass-panel' : ''}`}>
         <div className="nav-container">
           <a href="#" className="logo">
-            <Sun className="logo-icon pulse" />
-            <span className="logo-text">SQUARA <span className="gradient-text-green">TECH</span></span>
+            <img src="/logo.png" alt="Squara Technologies Logo" className="logo-img pulse" />
           </a>
           
           <div className="desktop-menu">
@@ -310,8 +309,7 @@ function App() {
         <div className="container grid-4 footer-top">
           <div className="footer-brand">
             <a href="#" className="logo">
-              <Sun className="logo-icon" />
-              <span className="logo-text">SQUARA <span className="gradient-text-green">TECH</span></span>
+              <img src="/logo.png" alt="Squara Technologies Logo" className="logo-img" />
             </a>
             <p className="footer-desc">Redefining energy through cutting-edge technology and sustainable infrastructure.</p>
           </div>
