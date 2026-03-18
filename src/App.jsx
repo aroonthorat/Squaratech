@@ -335,8 +335,13 @@ function App() {
           <div className="footer-contact">
             <h4>Contact</h4>
             <p>hello@squaratech.com</p>
-            <p>+1 (800) SQUARA-0</p>
-            <p>Sillicon Valley, CA</p>
+            <p>+91 (800) SQUARA-0</p>
+            <div style={{marginTop: '1rem'}}>
+              <p>4-18-34/P-325, Balajinagar Rd</p>
+              <p>Near Sidhivinayak Ganesh Mandir,</p>
+              <p>New Balaji Nagar, Chhatrapati Sambhajinagar,</p>
+              <p>Maharashtra 431005, India</p>
+            </div>
           </div>
         </div>
         <div className="container footer-bottom">
