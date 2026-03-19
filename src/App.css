@@ -26,10 +26,11 @@
   height: 200vh;
   left: -50%;
   background-image: 
-    linear-gradient(rgba(0, 255, 136, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.1) 1px, transparent 1px);
-  background-size: 80px 80px;
-  animation: gridMove 3s linear infinite;
+    linear-gradient(rgba(200, 240, 255, 0.3) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(200, 240, 255, 0.3) 2px, transparent 2px);
+  background-color: rgba(8, 25, 65, 0.6); /* Translucent solar silicon blue */
+  background-size: 120px 120px;
+  animation: gridMove 4s linear infinite;
 }
 
 /* Floor Grid */
@@ -52,7 +53,7 @@
 
 @keyframes gridMove {
   0% { background-position: 0 0; }
-  100% { background-position: 0 80px; }
+  100% { background-position: 0 120px; }
 }
 
 /* Navigation */
