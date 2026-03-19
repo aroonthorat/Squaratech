@@ -31,11 +31,10 @@ function App() {
   return (
     <div className="app-container">
       <LightningBackground />
-      {/* Background Energy Lines animation in App.css */}
+      {/* Animated Cyber Grid Background */}
       <div className="energy-bg">
-        <div className="energy-line line-1"></div>
-        <div className="energy-line line-2"></div>
-        <div className="energy-line line-3"></div>
+        <div className="grid-plane top-grid"></div>
+        <div className="grid-plane bottom-grid"></div>
       </div>
       
       {/* Navigation */}
